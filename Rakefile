@@ -20,7 +20,7 @@ Spec::Rake::SpecTask.new do |t|
   t.rcov_opts << '--sort' << 'coverage' << '--sort-reverse'
 end
 
-GEM         = "warden-googleapps"
+GEM         = "nzx-warden-googleapps"
 GEM_VERSION = Warden::GoogleApps::VERSION
 AUTHOR      = "Corey Donohoe"
 EMAIL       = "atmos@atmos.org"
