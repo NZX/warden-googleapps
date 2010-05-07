@@ -31,7 +31,7 @@ Warden::Strategies.add(:google_apps) do
       google_discovery = OpenID.discover(open_id_endpoint)
       open_id_request = consumer.begin(google_discovery.first)
       add_ax_fields(open_id_request)
-      redirect!(open_id_request.redirect_url(absolute_url(request), absolute_url(request)))
+      redirect!(open_id_request.redirect_url(absolute_url(request.path), absolute_url(request.path)))
     end
   end
 
